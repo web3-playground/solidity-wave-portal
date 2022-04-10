@@ -4,6 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deploy.ts",
+    "deploy:ropsten": "npm run deploy -- --network ropsten",
+    "deploy:local": "npm run deploy -- --network localhost",
+    "rpc:local": "npx hardhat node",
     "test": "npx hardhat test:jest"
   },
   "keywords": [],
